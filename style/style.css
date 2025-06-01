@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 header{
   position: sticky;
   top: 0;
 }
-.btnham{
+.btnbtn{
   display: none;
 }
 .navlogo{
@@ -15,6 +16,8 @@ header{
   font-size: 1.5em;
 }
 .navbar{
+  z-index: 30;
+  background-color: #b9a18b;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -38,6 +41,10 @@ text-decoration: none;
   border-radius: 10px;
   padding: 10px;
 }
+.navbtn:hover{
+  background-color: black;
+  cursor: pointer;
+}
 .navmobile{
   padding: 60px;
   position: absolute;
@@ -52,6 +59,7 @@ text-decoration: none;
   background-color: #ffffff;
   transform: scaleY(0);
   transform-origin: top;
+  transition: transform 0.3s ease;
 }
 .navmobile a{
   color: black;
@@ -65,7 +73,7 @@ text-decoration: none;
 }
 section{
   color: white;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +94,14 @@ main{
   gap: 1em;
   /* border: 1px solid white; */
 }
+.sectionb{
+  color: black;
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body{
   background-color: #b9a18b;
 }
@@ -100,7 +116,7 @@ body{
   .teks{
     text-align: center;
   }
-  .btnham{
+  .btnbtn{
     display: block;
   }
   .navlink{
